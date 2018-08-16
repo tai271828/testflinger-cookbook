@@ -27,6 +27,7 @@ maas-x86-node
 ## Model
 dgx-station
 dgx-server
+stlouis
 caracalla-media
 caracalla-transport
 caracalla-gpa
