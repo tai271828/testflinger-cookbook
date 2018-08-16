@@ -1,0 +1,6 @@
+job_queue: 201606-22344
+provision_data:
+  distro: desktop-16-04-curtinator
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP cat /proc/cpuinfo

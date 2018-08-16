@@ -1,0 +1,8 @@
+job_queue: <iot device>
+provision_data:
+  url: <image url>
+test_data:
+  test_cmds: |
+    ssh admin@$DEVICE_IP snap list
+  test_username: admin
+  test_password: admin
