@@ -1,0 +1,6 @@
+job_queue: 201808-26452
+provision_data:
+  distro: pc-kassel-bionic-amd64-daily
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a

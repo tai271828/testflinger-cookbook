@@ -1,0 +1,6 @@
+job_queue: 201807-26321
+provision_data:
+  distro: dell-bto-bionic-bucky-n5-v5-201807-26321-daily
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a

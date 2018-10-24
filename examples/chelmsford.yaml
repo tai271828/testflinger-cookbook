@@ -1,0 +1,6 @@
+job_queue: 201610-25170
+provision_data:
+  distro: iot-chelmsford-MBF1M332A-daily
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a

@@ -1,0 +1,6 @@
+job_queue: 201401-14499
+provision_data:
+  distro: xenial
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP cat /proc/cpuinfo

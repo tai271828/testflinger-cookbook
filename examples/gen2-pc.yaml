@@ -1,0 +1,6 @@
+job_queue: 201605-22336
+provision_data:
+  distro: iot-gen2-classic-bionic-daily
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a
