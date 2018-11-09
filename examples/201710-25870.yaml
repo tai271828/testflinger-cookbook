@@ -1,0 +1,6 @@
+job_queue: 201710-25870
+provision_data:
+  distro: dell-bto-bionic-beaver-whitehaven-201710-25870-daily 
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a
