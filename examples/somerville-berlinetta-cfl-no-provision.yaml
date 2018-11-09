@@ -1,0 +1,7 @@
+job_queue: 201802-26112
+test_data:
+  test_cmds: |
+    echo "testing by users"
+    ssh ubuntu@10.101.49.104 ls
+    ssh ubuntu@$DEVICE_IP ls
+    ssh ubuntu@$DEVICE_IP lsb_release -a
