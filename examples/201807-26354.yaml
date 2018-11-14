@@ -1,0 +1,6 @@
+job_queue: 201807-26354
+provision_data:
+  distro: dell-bto-bionic-italia-whl-201807-26354-daily 
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a

@@ -1,0 +1,6 @@
+job_queue: cool-quail
+provision_data:
+  distro: xenial
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP cat /proc/cpuinfo
