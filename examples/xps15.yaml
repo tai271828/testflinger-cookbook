@@ -1,0 +1,16 @@
+job_queue: 201606-22346
+provision_data:
+  distro: desktop-16-04-curtinator
+test_data:
+  test_cmds: |
+    _run() {{
+        ssh ubuntu@$DEVICE_IP $@
+    }}
+
+    _run 'lspci -nnvv | grep -i network'
+
+    _run "echo \"postfix postfix/mailname string \$(hostname)\" | sudo debconf-set-selections"
+    _run "echo  \"postfix postfix/main_mailer_type string 'Internet Site'\" | sudo debconf-set-selections"
+    _run sudo add-apt-repository ppa:checkbox-dev/ppa -y
+    _run sudo apt-get update
+    _run sudo apt-get install -y checkbox-ng python3-checkbox-ng plainbox-provider-checkbox plainbox-provider-resource-generic plainbox-provider-sru fswebcam obexftp wmctrl iperf mesa-utils plainbox-insecure-policy vim openssh-server pastebinit fwts

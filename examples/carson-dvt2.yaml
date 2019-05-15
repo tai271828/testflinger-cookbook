@@ -1,0 +1,6 @@
+job_queue: 201811-26670
+provision_data:
+  distro: pc-carson-sanbernardino-daily
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP lsb_release -a

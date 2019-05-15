@@ -1,0 +1,8 @@
+job_queue: stlouis-001
+provision_data:
+  url: http://10.101.47.1/plano/stlouis-current.img.xz
+test_data:
+  test_cmds: |
+    ssh admin@$DEVICE_IP snap list
+  test_username: admin
+  test_password: admin
