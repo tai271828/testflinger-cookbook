@@ -1,0 +1,10 @@
+job_queue: <your desktop job queue>
+provision_data:
+  distro: desktop-16-04-6-curtinator-legacy-v1
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP cat /proc/cpuinfo
+reserve_data:
+  ssh_keys:
+    - lp:taihsiangho
+  timeout: 3600
