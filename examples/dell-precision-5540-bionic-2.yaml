@@ -1,0 +1,10 @@
+job_queue: 201903-26932
+provision_data:
+  distro: 'bionic'
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP cat /proc/cpuinfo
+reserve_data:
+  ssh_keys:
+    - lp:taihsiangho
+  timeout: 3600
