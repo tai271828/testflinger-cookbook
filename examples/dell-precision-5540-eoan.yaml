@@ -3,5 +3,5 @@ provision_data:
   distro: eoan
 test_data:
   test_cmds: |
-    echo $DEVICE_IP
+    echo "The target device IP address is: $DEVICE_IP"
     ssh ubuntu@$DEVICE_IP free -m
