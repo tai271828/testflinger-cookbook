@@ -1,5 +1,5 @@
-# sprint-2018-kr-qa-sprint
-Testflinger session of 2018 Korea Sprint
+# Testflinger Cookbook
+This cookbook contains some testflinger-cli yaml to launch your testing over testflinger-cli.
 
 # Job Queues
 ## CIDs
