@@ -1,0 +1,7 @@
+job_queue: 201903-26932
+provision_data:
+  distro: eoan
+test_data:
+  test_cmds: |
+    echo $DEVICE_IP
+    ssh ubuntu@$DEVICE_IP free -m
